@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.5.RELEASE'
+		springBootVersion = '1.5.16.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -30,6 +30,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-jersey')
 	//compile('org.flywaydb:flyway-core')
+	compile('io.springfox:springfox-swagger2:2.9.2')
+	compile('io.springfox:springfox-data-rest:2.9.2')
+    compile('io.springfox:springfox-swagger-ui:2.9.2')
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
